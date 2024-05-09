@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 60px;
+
+}
+.calculator h1 span{
+    color: #ffff76;
+}
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    
+}
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+.input-box button{
+    padding: 5px 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    position: relative;
+    background: #ffff76;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+
+    /* 
+    This CSS code targets the calendar picker indicator element (::-webkit-calendar-picker-indicator) inside an input element with the class input-box. 
+    Let's break down what each property does:
+
+top: 0; left: 0; right: 0; bottom: 0;: This sets the positioning of the calendar picker indicator to stretch to cover the entire area of its containing 
+input element.
+
+width: auto; height: auto;: This allows the width and height of the indicator to adjust automatically based on its content.
+
+position: absolute;: This positions the indicator absolutely within its containing input element, allowing it to be placed precisely.
+
+background-position: calc(100% - 10px);: This property sets the position of the background image of the calendar picker indicator. 
+
+It calculates the position to be 10 pixels from the right edge of the indicator, ensuring it's aligned to the right side of the input box.
+
+background-size: 30px;: This property sets the size of the background image of the calendar picker indicator to 30 pixels, 
+ensuring it has a specific size.
+
+cursor: pointer;: This changes the cursor to a pointer when hovering over the calendar picker indicator, 
+indicating to the user that it's clickable.
+
+Overall, this CSS code customizes the appearance and behavior of the calendar picker indicator inside an input element with the class input-box,
+
+ making it cover the entire input area, positioning it precisely, and styling its background image.
+    */
+}
+
